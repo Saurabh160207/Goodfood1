@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Good Food Restaurant</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #f4a300;
+    }
+    nav {
+      display: flex;
+      overflow-x: auto;
+      padding: 1rem;
+      gap: 10px;
+      background: #f9f9f9;
+      white-space: nowrap;
+    }
+    nav button {
+      border: none;
+      background: #ffefd5;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    nav button:hover, nav button.active {
+      background: #f4a300;
+      color: #fff;
+    }
+    .section {
+      display: none;
+      padding: 1rem;
+    }
+    .section.active {
+      display: block;
+      animation: fade 0.5s ease-in-out;
+    }
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .item {
+      display: flex;
+      background: #fff;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    .item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .item-details {
+      padding: 0.8rem;
+    }
+    .item-details h4 {
+      margin-bottom: 5px;
+      font-size: 1.1rem;
+    }
+    .item-details p {
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .item-details span {
+      display: block;
+      margin-top: 5px;
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Good Food Restaurant</div>
+  </header>
+  <nav
